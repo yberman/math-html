@@ -1,0 +1,35 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Math Template</title>
+		<script src="math.js"></script>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+		<link rel="stylesheet" type="text/css" href="math.css">
+	</head>
+	<body >
+	<h1>Math Template</h1>
+
+	<p>This html document serves as a template for writing short mathematical notes. You would not want to
+	make a proper webpage out of it, but it would be useful if you are stuck somewhere without LaTeX and want to
+	get some ideas down. It can be downloaded on <a href="https://github.com/yberman/math-html">github</a>.</p>
+
+	<h2>Math example</h2>
+	<p>\[e^{i\pi} = -1\]</p>
+
+	<h2>Another Math example</h2>
+	<p>\[\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s} = \prod_{p \textrm{ prime}} \frac{1}{1 - p^{-1}}\]</p>
+
+	<h2>Simple plots of functions</h2>
+	TODO(yberman)
+	<canvas id="plot1"></canvas>
+	<script>
+	var p = plot("plot1");
+	p.plotFunction(x=>x^2, -10, 10, -10, 10);
+	</script>
+
+
+
+	</body>
+</html>
+
